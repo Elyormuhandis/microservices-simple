@@ -3,10 +3,7 @@ package uz.muhandis.departmentservice.controller;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import uz.muhandis.departmentservice.dto.DepartmentDto;
 import uz.muhandis.departmentservice.service.DepartmentService;
 
@@ -25,6 +22,10 @@ public class DepartmentController {
         return new ResponseEntity<>(saveDepartment, HttpStatus.CREATED);
     }
 
+    @GetMapping("{department-code}")
+    public ResponseEntity<DepartmentDto> getDepartmentByCode(@PathVariable("department-code") String code){
+        return new ResponseEntity<>(departmentService.getDepartmentByCode(code), HttpStatus.OK);
+    }
 
 
 }

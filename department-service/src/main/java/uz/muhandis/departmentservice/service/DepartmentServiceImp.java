@@ -1,6 +1,5 @@
 package uz.muhandis.departmentservice.service;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import uz.muhandis.departmentservice.dto.DepartmentDto;
@@ -8,12 +7,14 @@ import uz.muhandis.departmentservice.entity.Department;
 import uz.muhandis.departmentservice.mapper.DepartmentMapper;
 import uz.muhandis.departmentservice.repository.DepartmentRepository;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class DepartmentServiceImp implements DepartmentService{
 
-    private DepartmentRepository departmentRepository;
-    private DepartmentMapper departmentMapper;
+    private final DepartmentRepository departmentRepository;
+    private final DepartmentMapper departmentMapper;
 
     @Override
     public DepartmentDto saveDepartment(DepartmentDto departmentDto) {
@@ -24,9 +25,9 @@ public class DepartmentServiceImp implements DepartmentService{
 
     @Override
     public DepartmentDto getDepartmentByCode(String code) {
-
-
-
-        return null;
+        Optional<Department> optional = departmentRepository.findDepartmentByDepartmentCode(code);
+        if (optional.isPresent())
+            return departmentMapper.departmentToDto(optional.get());
+        return new DepartmentDto();
     }
 }
