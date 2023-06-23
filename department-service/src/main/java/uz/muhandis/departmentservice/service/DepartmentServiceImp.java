@@ -4,6 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import uz.muhandis.departmentservice.dto.DepartmentDto;
 import uz.muhandis.departmentservice.entity.Department;
+import uz.muhandis.departmentservice.exceptions.DepartmentAlreadyExistException;
+import uz.muhandis.departmentservice.exceptions.ResourceNotFoundException;
 import uz.muhandis.departmentservice.mapper.DepartmentMapper;
 import uz.muhandis.departmentservice.repository.DepartmentRepository;
 
@@ -18,16 +20,17 @@ public class DepartmentServiceImp implements DepartmentService{
 
     @Override
     public DepartmentDto saveDepartment(DepartmentDto departmentDto) {
-        //convert department dto to department jpa entity
+        Optional<Department> departmentByDepartmentCode = departmentRepository.findDepartmentByDepartmentCode(departmentDto.getDepartmentCode());
+        if (departmentByDepartmentCode.isPresent())
+            throw new DepartmentAlreadyExistException("This department already exist");
         Department savedDepartment = departmentRepository.save(departmentMapper.dtoToDepartment(departmentDto));
         return departmentMapper.departmentToDto(savedDepartment);
     }
 
     @Override
     public DepartmentDto getDepartmentByCode(String code) {
-        Optional<Department> optional = departmentRepository.findDepartmentByDepartmentCode(code);
-        if (optional.isPresent())
-            return departmentMapper.departmentToDto(optional.get());
-        return new DepartmentDto();
+        Department department = departmentRepository.findDepartmentByDepartmentCode(code)
+                .orElseThrow(() -> new ResourceNotFoundException("Department", "code", code));
+        return departmentMapper.departmentToDto(department);
     }
 }

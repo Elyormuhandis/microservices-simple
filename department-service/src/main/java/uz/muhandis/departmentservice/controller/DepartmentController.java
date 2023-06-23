@@ -1,5 +1,6 @@
 package uz.muhandis.departmentservice.controller;
 
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +18,7 @@ public class DepartmentController {
     //Build save department REST API
 
     @PostMapping
-    public ResponseEntity<DepartmentDto> saveDepartment(@RequestBody DepartmentDto departmentDto) {
+    public ResponseEntity<DepartmentDto> saveDepartment(@RequestBody @Valid DepartmentDto departmentDto) {
         DepartmentDto saveDepartment = departmentService.saveDepartment(departmentDto);
         return new ResponseEntity<>(saveDepartment, HttpStatus.CREATED);
     }
