@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import uz.muhandis.employeeservice.dto.EmployeeDto;
 import uz.muhandis.employeeservice.entity.Employee;
+import uz.muhandis.employeeservice.exceptions.ResourceNotFoundException;
 import uz.muhandis.employeeservice.mapper.EmployeeMapper;
 import uz.muhandis.employeeservice.repository.EmployeeRepository;
 
@@ -23,9 +24,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public EmployeeDto getEmployeeById(Long id) {
-        Optional<Employee> employeeOptional = employeeRepository.findById(id);
-        if (employeeOptional.isPresent())
-            return employeeMapper.employeeToDto(employeeOptional.get());
-        return new EmployeeDto();
+        Employee employee = employeeRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Employee", "id", id));
+        return employeeMapper.employeeToDto(employee);
     }
 }

@@ -1,12 +1,11 @@
-package uz.muhandis.departmentservice.exceptions;
+package uz.muhandis.employeeservice.exceptions;
 
 import lombok.*;
-import lombok.experimental.Accessors;
 
 import java.time.LocalDateTime;
 
-@Getter
 @Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
@@ -15,5 +14,4 @@ public class ErrorDetails {
     private String message;
     private String path;
     private String errorCode;
-
 }

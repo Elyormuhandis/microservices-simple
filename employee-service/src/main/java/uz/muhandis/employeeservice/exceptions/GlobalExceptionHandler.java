@@ -1,6 +1,6 @@
-package uz.muhandis.departmentservice.exceptions;
+package uz.muhandis.employeeservice.exceptions;
 
-import jakarta.annotation.Nullable;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -20,30 +20,37 @@ import java.util.Map;
 
 @ControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
-
     @ExceptionHandler(ResourceNotFoundException.class)
-    public ResponseEntity<ErrorDetails> handleResourceNotFoundException(ResourceNotFoundException e, WebRequest w) {
+    public ResponseEntity<ErrorDetails> resourceNotFoundExceptionHandler(ResourceNotFoundException e, WebRequest w) {
         ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), e.getMessage(),
-                w.getDescription(false),"DEPARTMENT_NOT_FOUND");
-        System.out.println(errorDetails);
+                w.getDescription(false), "RESOURCE_NOT_FOUND");
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<ErrorDetails> handleGlobalException(Exception e, WebRequest w) {
+    @ExceptionHandler(EmailAreadyExistException.class)
+    public ResponseEntity<ErrorDetails> emailAlreadyExistExceptionHandler(EmailAreadyExistException e, WebRequest w) {
         ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), e.getMessage(),
-                w.getDescription(false),"INTERNAL_SERVER_ERROR");
+                w.getDescription(true), "EMAIL_ALREADY_EXIST");
+
         return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ErrorDetails> globalExceptionHandler(Exception e, WebRequest w) {
+
+        ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), e.getMessage(),
+                w.getDescription(false), "INTERNAL_SERVER_ERROR");
+        return new ResponseEntity<>(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
     @Override
-    protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, @Nullable HttpHeaders headers, @Nullable HttpStatusCode status,@Nullable WebRequest request) {
+    protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, @NotNull HttpHeaders headers, @NotNull HttpStatusCode status, @NotNull WebRequest request) {
         Map<String, String> errors = new HashMap<>();
-        List<ObjectError> errorList = ex.getBindingResult().getAllErrors();
-        errorList.forEach(objectError -> {
-            String fieldName = ((FieldError)objectError).getField();
-            String message = objectError.getDefaultMessage();
-            errors.put(fieldName, message);
+        List<ObjectError> errorList = ex.getAllErrors();
+        errorList.forEach(e->{
+            String field = ((FieldError) e).getField();
+            String message = e.getDefaultMessage();
+            errors.put(field, message);
         });
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
