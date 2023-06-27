@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import uz.muhandis.employeeservice.dto.APIResponse;
 import uz.muhandis.employeeservice.dto.EmployeeDto;
 import uz.muhandis.employeeservice.service.EmployeeService;
 
@@ -20,8 +21,8 @@ public class EmployeeController {
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<EmployeeDto> getEmployeeById(@PathVariable Long id) {
-        EmployeeDto foundEmployee = employeeService.getEmployeeById(id);
-        return new ResponseEntity<>(foundEmployee, HttpStatus.OK);
+    public ResponseEntity<APIResponse> getEmployeeById(@PathVariable Long id) {
+        APIResponse apiResponse = employeeService.getEmployeeById(id);
+        return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
 }

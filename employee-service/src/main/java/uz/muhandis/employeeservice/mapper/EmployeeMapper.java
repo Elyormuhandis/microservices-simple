@@ -1,6 +1,9 @@
 package uz.muhandis.employeeservice.mapper;
 
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import uz.muhandis.employeeservice.dto.APIResponse;
+import uz.muhandis.employeeservice.dto.DepartmentDto;
 import uz.muhandis.employeeservice.dto.EmployeeDto;
 import uz.muhandis.employeeservice.entity.Employee;
 
@@ -8,5 +11,9 @@ import uz.muhandis.employeeservice.entity.Employee;
 public interface EmployeeMapper {
 
     EmployeeDto employeeToDto(Employee employee);
-    Employee dtoToEmployee(EmployeeDto employeeDto);
+    Employee dtoToEmployee(EmployeeDto employee);
+
+    @Mapping(target = "employee", source = "employee")
+    @Mapping(target = "department", source = "department")
+    APIResponse dtoToResponse(Employee employee, DepartmentDto department);
 }
