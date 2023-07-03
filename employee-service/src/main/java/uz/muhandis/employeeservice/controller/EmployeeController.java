@@ -9,7 +9,7 @@ import uz.muhandis.employeeservice.dto.EmployeeDto;
 import uz.muhandis.employeeservice.service.EmployeeService;
 
 @RestController
-@RequestMapping("api/employee")
+@RequestMapping("api/employees")
 @RequiredArgsConstructor
 public class EmployeeController {
     private final EmployeeService employeeService;
