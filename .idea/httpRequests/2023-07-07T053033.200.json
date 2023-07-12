@@ -1,0 +1,15 @@
+{
+  "employee": {
+    "id": 1,
+    "firstName": "Ramesh",
+    "lastName": "Fadatare",
+    "email": "ramesh@mail.com",
+    "departmentCode": "IT001"
+  },
+  "department": {
+    "id": 1,
+    "departmentName": "IT",
+    "departmentDescription": "Information Technology",
+    "departmentCode": "IT001"
+  }
+}

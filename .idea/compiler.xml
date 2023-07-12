@@ -10,7 +10,6 @@
         <module name="api-gateway" />
         <module name="config-server" />
         <module name="service-registry" />
-        <module name="service-registery" />
       </profile>
       <profile name="Annotation profile for employee-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
