@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfb5af1-5769-443d-a0f9-4dd57f99ba62" name="Changes" comment="" />
+    <list default="true" id="8bfb5af1-5769-443d-a0f9-4dd57f99ba62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/controller/OrganizationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/dto/OrganizationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/entity/Organization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/mapper/OrganizationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/repository/OrganizationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/service/OrganizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/service/OrganizationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,6 +47,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2SCzniwn204H03PsVXStrwY3asN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,11 +66,16 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "D:/Projects/development/backend/microservices-simple/organization-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "spring.configuration.checksum": "2b8aee2cfee73fa06d7aa5cbf884d5e1",
     "vue.rearranger.settings.migration": "true"
@@ -65,7 +96,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.OrganizationServiceApplication">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -93,6 +124,13 @@
     <configuration name="EmployeeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="employee-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="uz.muhandis.employeeservice.EmployeeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrganizationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="organization-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uz.muhandis.organizationservice.OrganizationServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
