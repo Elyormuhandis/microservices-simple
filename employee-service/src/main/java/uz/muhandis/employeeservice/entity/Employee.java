@@ -11,6 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name = "employees")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,5 +24,6 @@ public class Employee {
     private String email;
     @Column(name = "department_code", nullable = false)
     private String departmentCode;
-
+    @Column(name = "organization_code", nullable = false)
+    private String organizationCode;
 }

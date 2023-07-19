@@ -5,6 +5,7 @@ import org.mapstruct.Mapping;
 import uz.muhandis.employeeservice.dto.APIResponse;
 import uz.muhandis.employeeservice.dto.DepartmentDto;
 import uz.muhandis.employeeservice.dto.EmployeeDto;
+import uz.muhandis.employeeservice.dto.OrganizationDto;
 import uz.muhandis.employeeservice.entity.Employee;
 
 @Mapper(componentModel = "spring")
@@ -15,5 +16,6 @@ public interface EmployeeMapper {
 
     @Mapping(target = "employee", source = "employee")
     @Mapping(target = "department", source = "department")
-    APIResponse dtoToResponse(Employee employee, DepartmentDto department);
+    @Mapping(target = "organization", source = "organization")
+    APIResponse dtoToResponse(Employee employee, DepartmentDto department, OrganizationDto organization);
 }

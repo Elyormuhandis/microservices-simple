@@ -1,5 +1,8 @@
 package uz.muhandis.employeeservice.dto;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,4 +18,5 @@ public class EmployeeDto {
     private String lastName;
     private String email;
     private String departmentCode;
+    private String organizationCode;
 }

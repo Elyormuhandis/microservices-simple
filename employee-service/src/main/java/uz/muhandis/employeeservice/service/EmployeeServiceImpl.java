@@ -1,24 +1,18 @@
 package uz.muhandis.employeeservice.service;
 
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.client.WebClient;
 import uz.muhandis.employeeservice.dto.APIResponse;
 import uz.muhandis.employeeservice.dto.DepartmentDto;
 import uz.muhandis.employeeservice.dto.EmployeeDto;
+import uz.muhandis.employeeservice.dto.OrganizationDto;
 import uz.muhandis.employeeservice.entity.Employee;
 import uz.muhandis.employeeservice.exceptions.ResourceNotFoundException;
 import uz.muhandis.employeeservice.mapper.EmployeeMapper;
 import uz.muhandis.employeeservice.repository.EmployeeRepository;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -29,7 +23,8 @@ public class EmployeeServiceImpl implements EmployeeService{
     private final EmployeeMapper employeeMapper;
 //    private final RestTemplate restTemplate;
 //    private final WebClient webClient;
-    private final APIClient apiClient;
+    private final DepartmentAPIClient departmentApiClient;
+    private final OrganizationAPIClient organizationAPIClient;
 
 
     @Override
@@ -56,9 +51,9 @@ public class EmployeeServiceImpl implements EmployeeService{
 //                .retrieve()
 //                .bodyToMono(DepartmentDto.class)
 //                .block();
-        DepartmentDto departmentDto = apiClient.getDepartment(employee.getDepartmentCode());
-
-        return employeeMapper.dtoToResponse(employee, departmentDto);
+        DepartmentDto departmentDto = departmentApiClient.getDepartment(employee.getDepartmentCode());
+        OrganizationDto organizationDto = organizationAPIClient.getOrganization(employee.getOrganizationCode());
+        return employeeMapper.dtoToResponse(employee, departmentDto, organizationDto);
     }
 
     public APIResponse getDefaultDepartment(Long employeeId, Exception exception) {
@@ -80,8 +75,11 @@ public class EmployeeServiceImpl implements EmployeeService{
         departmentDto.setDepartmentName("R&D department");
         departmentDto.setDepartmentDescription("Research and Development");
         departmentDto.setDepartmentCode("RD001");
-
-        return employeeMapper.dtoToResponse(employee, departmentDto);
+        OrganizationDto organizationDto = new OrganizationDto();
+        organizationDto.setOrganizationName("Tax Comittee");
+        organizationDto.setOrganizationDescription("Tax Comittee of Republic of Uzbekistan");
+        organizationDto.setOrganizationCode("UZTAX");
+        return employeeMapper.dtoToResponse(employee, departmentDto, organizationDto);
 
     }
 }

@@ -5,20 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfb5af1-5769-443d-a0f9-4dd57f99ba62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/controller/OrganizationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/dto/OrganizationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/entity/Organization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/mapper/OrganizationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/repository/OrganizationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/service/OrganizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/service/OrganizationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/OrganizationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/OrganizationAPIClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/APIResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/APIResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/EmployeeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/mapper/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/APIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/DepartmentAPIClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/controller/OrganizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/controller/OrganizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "2b8aee2cfee73fa06d7aa5cbf884d5e1",
+    "spring.configuration.checksum": "4643e00569b331551dd489b8dd7d93af",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -89,6 +91,12 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="uz.muhandis.employeeservice.service" />
+      <recent name="uz.muhandis.employeeservice.dto" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -96,9 +104,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrganizationServiceApplication">
+  <component name="RunManager" selected="Spring Boot.EmployeeServiceApplication">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="config-server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="config-server" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
@@ -161,6 +182,7 @@
       <workItem from="1688945901927" duration="198000" />
       <workItem from="1688946135730" duration="11365000" />
       <workItem from="1689331356544" duration="6973000" />
+      <workItem from="1689769123397" duration="3012000" />
     </task>
     <servers />
   </component>

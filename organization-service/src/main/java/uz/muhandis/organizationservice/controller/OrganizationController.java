@@ -19,7 +19,7 @@ public class OrganizationController {
         return new ResponseEntity<>(savedOrganization, HttpStatus.CREATED);
     }
 
-    @GetMapping("orragization/{code}")
+    @GetMapping("{code}")
     public ResponseEntity<OrganizationDto> getOrganization(@PathVariable(value = "code") String organizationCode) {
         OrganizationDto organization = organizationService.getOrganization(organizationCode);
         return new ResponseEntity<>(organization, HttpStatus.OK);
