@@ -12,10 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class DepartmentDto {
     private Long id;
-    @NotEmpty(message = "Department name shouldn't be empty!")
     private String departmentName;
-    @NotEmpty(message = "Department description shouldn't be empty!")
     private String departmentDescription;
-    @NotEmpty(message = "Department code shouldn't be empty!")
     private String departmentCode;
 }

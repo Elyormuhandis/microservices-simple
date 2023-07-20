@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/microservices-simple.iml" filepath="$PROJECT_DIR$/.idea/microservices-simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/react-frontend.iml" filepath="$PROJECT_DIR$/react-frontend.iml" />
     </modules>
   </component>
 </project>

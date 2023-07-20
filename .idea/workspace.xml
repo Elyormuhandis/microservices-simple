@@ -5,21 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfb5af1-5769-443d-a0f9-4dd57f99ba62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/OrganizationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/OrganizationAPIClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/src/component/EmployeeComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/src/service/EmployeeService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3ad83f9-0986-4dfa-97d6-9918194a7260/storage_v2/_src_/database/employee_db.r-N7Ng/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/APIResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/APIResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/uz/muhandis/departmentservice/DepartmentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/uz/muhandis/departmentservice/DepartmentServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/uz/muhandis/departmentservice/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/uz/muhandis/departmentservice/controller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/uz/muhandis/departmentservice/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/uz/muhandis/departmentservice/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/uz/muhandis/departmentservice/dto/DepartmentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/uz/muhandis/departmentservice/dto/DepartmentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/EmployeeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/EmployeeServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/DepartmentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/DepartmentDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/dto/EmployeeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/mapper/EmployeeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/APIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/DepartmentAPIClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/uz/muhandis/employeeservice/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/OrganizationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/OrganizationServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/controller/OrganizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/controller/OrganizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/dto/OrganizationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/dto/OrganizationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/mapper/OrganizationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/uz/muhandis/organizationservice/mapper/OrganizationMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/organization-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +65,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,6 +92,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -74,11 +109,12 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "spring.configuration.checksum": "4643e00569b331551dd489b8dd7d93af",
     "vue.rearranger.settings.migration": "true"
   },
@@ -104,8 +140,11 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EmployeeServiceApplication">
+  <component name="RunManager" selected="Spring Boot.DepartmentServiceApplication">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -163,8 +202,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="React-frontend" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/react-frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #1" />
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.React-frontend" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.DepartmentServiceApplication" />
+      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
+      <item itemvalue="Spring Boot.OrganizationServiceApplication" />
+      <item itemvalue="Spring Boot.ServiceRegistryApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.React-frontend" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
       </list>
     </recent_temporary>
@@ -182,11 +243,15 @@
       <workItem from="1688945901927" duration="198000" />
       <workItem from="1688946135730" duration="11365000" />
       <workItem from="1689331356544" duration="6973000" />
-      <workItem from="1689769123397" duration="3012000" />
+      <workItem from="1689769123397" duration="3303000" />
+      <workItem from="1689828670303" duration="17470000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

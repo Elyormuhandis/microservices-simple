@@ -10,18 +10,15 @@ public class OrganizationMapper {
                 organization.getId(),
                 organization.getOrganizationName(),
                 organization.getOrganizationDescription(),
-                organization.getOrganizationCode(),
-                organization.getCreatedDate()
+                organization.getOrganizationCode()
         );
     }
 
     public static Organization mapToOrganization(OrganizationDto organizationDto) {
-        return new Organization(
-                organizationDto.getId(),
-                organizationDto.getOrganizationName(),
-                organizationDto.getOrganizationDescription(),
-                organizationDto.getOrganizationCode(),
-                organizationDto.getCreatedDate()
-        );
+        Organization organization = new Organization();
+        organization.setOrganizationName(organizationDto.getOrganizationName());
+        organization.setOrganizationDescription(organizationDto.getOrganizationDescription());
+        organization.setOrganizationCode(organizationDto.getOrganizationCode());
+        return organization;
     }
 }
